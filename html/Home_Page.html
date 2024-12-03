@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Continetal Cars</title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Page_Style.css">
+    <script src="../script/Script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sofia+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+</head>
+<body>
+<center>
+    <div>
+        <div class="header">
+            <table class="header_bar" cellspacing="0" cellpadding="0">
+                <tr>
+                    <th width="350px"><a href="../html/Home_Page.html">Home</a></th>
+                    <th width="350px"><a href="../html/Car_Details.html">Nos Voitures</a></th>
+                    <th width="350px"><a href="../html/Services.html">Nos Services</a></th>
+                    <th width="350px"><a href="../html/About_Us.html">A propos</a></th>
+                    <th width="350px"><a href="../html/Contact_Us.html">contactez Nous</a></th>
+                    <th class="void" width="450px"></th>
+                    <th class="void"><a href="../html/Home_Page.html"><img src="../images/img.png" alt="Logo_CS" height="110px"></a></th>
+                </tr>
+            </table>
+            </div>
+            <div class="bg_h">
+                <div class="slideshow_container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../images/slide_car_1.jpg" alt="Image1"></div>
+                            <div class="swiper-slide"><img src="../images/slide_car_2.jpg" alt="Image2"></div>
+                            <div class="swiper-slide"><img src="../images/slide_car_3.jpg" alt="Image3"></div>
+                            <div class="swiper-slide"><img src="../images/slide_car_4.jpg" alt="Image4"></div>
+                            <div class="swiper-slide"><img src="../images/slide_car_5.jpg" alt="Image5"></div>
+                            <div class="swiper-slide"><img src="../images/slide_car_6.jpg" alt="Image6"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                    <div class="cars_services">
+                        <div class="cs_block">
+                            <h3>Nos Voitures</h3>
+                            <a href="../html/Car_Details.html"><img src="../images/placeholder_3.jpg" alt="Nos Voitures"></a>
+                        </div>
+                        <div class="cs_block">
+                            <h3>Nos Service</h3>
+                            <a href="../html/Services.html"><img src="../images/placeholder_2.webp" alt="Nos Services"></a>
+                        </div>
+                    </div>
+                <div class="info_bar">
+                    <table>
+                        <tr>
+                            <th>Continetal Cars Oujda</th>
+                            <th>Horaires de travail</th>
+                            <th class="voi"></th>
+                            <th>Localisation</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>
+                                    Continental Cars Oujda<br><br><br><br>
+                                    Service : +212 522 65 09 90<br><br><br><br>
+                                    Vente Véhicules neufs : +212 522 65 09 90<br><br><br><br>
+                                    Pièces : +212 522 65 09 90<br><br><br><br>
+                                </h5>
+                            </td>
+                            <td>
+                                <h5>
+                                    Lundi:	<br>
+                                    08:00 - 18:30<br><br>
+                                    Mardi:	<br>
+                                    08:00 - 18:30<br><br>
+                                    Mercredi:	<br>
+                                    08:00 - 18:30<br><br>
+                                    Jeudi:	<br>
+                                    08:00 - 18:30<br><br>
+                                    Vendredi:	<br>
+                                    08:00 - 18:30<br><br>
+                                    Samedi:	<br>
+                                    10:00 - 14:00<br><br>
+                                    Dimanche:	Fermé
+                                </h5>
+                            </td>
+                            <td class="void"></td>
+                            <td>
+                                <div id="googleMap" ></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            <footer>
+                <table class="footer_bar">
+                    <tr>
+                        <th><a href="../html/About_Us.html">A propos</a></th>
+                        <th><a href="../html/Contact_Us.html">contactez-nous</a></th>
+                        <th class="void" width="35%"></th>
+                        <th>©copyright Ehei Oujda 2022</th>
+                    </tr>
+                </table>
+            </footer>
+        </div>
+    </div>
+</center>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhBwQIy0dP161ugExFlMcYJlQsweeKljYY&callback=myMap"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction:false,
+    },
+    
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
+</script>
+</body>
+</html>
